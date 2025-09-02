@@ -1,4 +1,3 @@
-
 # Lab 2: TDD a Small Ruby Class (BankAccount)
 
 Practice Test-Driven Development (TDD) by building and testing a small Ruby class: **BankAccount**. You'll write RSpec specs for BankAccount, then implement the class to make your tests pass.
@@ -9,9 +8,10 @@ Practice Test-Driven Development (TDD) by building and testing a small Ruby clas
 
 1. **You will be working with the `BankAccount` class for this lab.**
    - The class skeleton for BankAccount is provided for you—do not define the class yourself.
-   - Create your spec file in `spec/student/bank_account_spec.rb`.
+   - Write your RSpec tests in `spec/student/bank_account_spec.rb`.
    - All your specs should focus on testing the behavior of BankAccount.
 2. **Start with the Red step:**
+
    - Write a spec for a method you want to implement for BankAccount (e.g., `deposit`).
    - Run `bin/rspec` before any code exists. You should see a failure—this is expected!
    - Example of an initial failing spec for BankAccount (not a solution):
@@ -26,6 +26,7 @@ Practice Test-Driven Development (TDD) by building and testing a small Ruby clas
      ```
 
    - The failure message is your "Red" step. Do not skip this!
+
 3. **Green step:**
    - Implement the simplest code needed to make your BankAccount spec pass.
    - Run `bin/rspec` again to see the test pass (green output).
