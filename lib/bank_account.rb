@@ -1,7 +1,17 @@
 # frozen_string_literal: true
 
 class BankAccount
-  def deposit(amount); end
-  def withdraw(amount); end
-  def balance; end
+  attr_accessor :balance
+
+  def initialize(balance)
+    @balance = balance
+  end
+
+  def deposit(amount)
+    @balance += amount
+  end
+
+  def withdraw(amount)
+    @balance -= amount
+  end
 end
