@@ -1,7 +1,23 @@
 # frozen_string_literal: true
 
 class BankAccount
-  def deposit(amount); end
-  def withdraw(amount); end
-  def balance; end
+  def initialize
+    @balance = 0
+  end
+
+  def deposit(amount)
+    @balance += amount
+  end
+
+  def withdraw(amount)
+    if @balance >= amount
+      @balance -= amount
+    else
+      raise "Insufficient funds"
+    end
+  end
+
+  def balance
+    @balance
+  end
 end
